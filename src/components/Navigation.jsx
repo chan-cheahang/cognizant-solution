@@ -3,7 +3,17 @@ import './Navigation.css';
 
 class Navigation extends Component {
     state = {
+        openFeatures: false,
+        openCompany: false,
         openNavigation: false
+    }
+
+    toggleFeatures = () => {
+        this.setState({ openFeatures: !this.state.openFeatures });
+    }
+
+    toggleCompany = () => {
+        this.setState({ openCompany: !this.state.openCompany });
     }
 
     toggleNavigation = () => {
@@ -21,15 +31,34 @@ class Navigation extends Component {
 
                         <div className={`navigation__container ${this.state.openNavigation && 'active'}`}>
                             <div className='btn-close'>
-                                <img src='images/icon-close-menu.svg' alt='' onClick={this.toggleNavigation} />
+                                <img src='images/icon-close-menu.svg' alt='close mobile navigation icon' onClick={this.toggleNavigation} />
                             </div>
 
                             <ul className='navigation__list'>
                                 <li className='navigation__secondary' tabIndex='1'>
-                                    <a href='#'>Features <img className='chevron' src='images/icon-arrow-down.svg' alt='' /></a>
+                                    <a href='#' onClick={this.toggleFeatures}>Features <img className='chevron' src='images/icon-arrow-down.svg' alt='chevron down icon' /></a>
+                                    <ul className={`navigation__secondary_features ${this.state.openFeatures && 'active'}`}>
+                                        <li>
+                                            <a href='#'><img src='images/icon-todo.svg' alt='To do list' />Todo List</a>
+                                        </li>
+                                        <li>
+                                            <a href='#'><img src='images/icon-calendar.svg' alt='Calendar' />Calendar</a>
+                                        </li>
+                                        <li>
+                                            <a href='#'><img src='images/icon-reminders.svg' alt='Reminders' />Reminders</a>
+                                        </li>
+                                        <li>
+                                            <a href='#'><img src='images/icon-planning.svg' alt='Planning' />Planning</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li className='navigation__secondary' tabIndex='2'>
-                                    <a href='#'>Company <img className='chevron' src='images/icon-arrow-down.svg' alt='' /></a>
+                                    <a href='#' onClick={this.toggleCompany}>Company <img className='chevron' src='images/icon-arrow-down.svg' alt='chevron down icon' /></a>
+                                    <ul className={`navigation__secondary_company ${this.state.openCompany && 'active'}`}>
+                                        <li><a href='#'>History</a></li>
+                                        <li><a href='#'>Our Team</a></li>
+                                        <li><a href='#'>Blog</a></li>
+                                    </ul>
                                 </li>
                                 <li tabIndex='3'><a href='#'>Careers</a></li>
                                 <li tabIndex='4'><a href='#'>About</a></li>
@@ -42,7 +71,7 @@ class Navigation extends Component {
                         </div>
 
                         <div className='btn-menu'>
-                            <img src='images/icon-menu.svg' alt='' onClick={this.toggleNavigation} />
+                            <img src='images/icon-menu.svg' alt='open mobile navigation icon' onClick={this.toggleNavigation} />
                         </div>
                     </nav>
                 </section>
