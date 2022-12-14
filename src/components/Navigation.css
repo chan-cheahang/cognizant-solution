@@ -31,12 +31,11 @@
 .navigation__container li a {
     color: var(--colorTextGray);
     font-size: 15px;
-
     transition: 0.3s;
 }
 
 
-.navigation__container li:focus a,
+.navigation__container li:focus > a,
 .navigation__container li a:hover,
 .navigation__container li a:focus {
     color: var(--colorTextGrayHover);
