@@ -12,7 +12,7 @@
   --colorTextWhite: hsl(0, 0%, 98%);
   --colorTextGray: hsl(0, 0%, 41%);
   --colorTextBlack: hsl(0, 0%, 8%);
-  --colorTextGrayHover: hsl(0, 0%, 76%);
+  --colorTextGrayHover: hsla(0, 0%, 41%, 80%);
 }
 
 body {
