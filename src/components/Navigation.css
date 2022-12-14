@@ -81,8 +81,16 @@
     display: block;
 }
 
+.navigation__secondary_features li a {
+    display: grid;
+    grid-template-columns: 16px 9fr;
+    grid-gap: 16px;
+    width: 118px;
+}
+
 .navigation__secondary_features li img {
-    margin-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* End Sub Navi */
