@@ -12,6 +12,7 @@
   --colorTextWhite: hsl(0, 0%, 98%);
   --colorTextGray: hsl(0, 0%, 41%);
   --colorTextBlack: hsl(0, 0%, 8%);
+  --colorTextGrayHover: hsl(0, 0%, 76%);
 }
 
 body {
@@ -46,6 +47,8 @@ body {
   color: var(--colorTextGray);
   line-height: 1.5;
   margin-top: 45px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .banner__content button {
