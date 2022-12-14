@@ -9,10 +9,12 @@ class Navigation extends Component {
     }
 
     toggleFeatures = () => {
+        if (this.state.openCompany) this.setState({ openCompany: false });
         this.setState({ openFeatures: !this.state.openFeatures });
     }
 
     toggleCompany = () => {
+        if (this.state.openFeatures) this.setState({ openFeatures: false });
         this.setState({ openCompany: !this.state.openCompany });
     }
 
