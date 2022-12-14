@@ -13,7 +13,9 @@ function App() {
             <p>Get your team in sync, no matter your location. Streamline processes,
               create team rituals, and watch productivity soar.</p>
 
-            <button href="#">Learn more</button>
+            <a href="#" tabindex='7'>
+              <button>Learn more</button>
+            </a>
 
             <div className="banner__clients">
               <img src="images/client-databiz.svg" alt="client-databiz" height="16" />

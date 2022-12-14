@@ -60,7 +60,8 @@ body {
   background-color: var(--colorTextBlack);
 }
 
-.banner__content button:hover {
+.banner__content button:hover,
+.banner__content button:focus {
   border: 2px solid var(--colorTextGray);
   background-color: var(--colorTextWhite);
   color: var(--colorTextBlack);
