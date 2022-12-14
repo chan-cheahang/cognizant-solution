@@ -61,10 +61,12 @@ body {
   text-align: center;
   color: var(--colorTextWhite);
   background-color: var(--colorTextBlack);
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .banner__content button:hover,
-.banner__content button:focus {
+.banner__content a:focus button {
   border: 2px solid var(--colorTextGray);
   background-color: var(--colorTextWhite);
   color: var(--colorTextBlack);

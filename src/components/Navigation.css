@@ -31,6 +31,15 @@
 .navigation__container li a {
     color: var(--colorTextGray);
     font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+.navigation__container li:focus-within a,
+.navigation__container li a:hover,
+.navigation__container li a:focus {
+    color: var(--colorTextGrayHover);
 }
 
 /* End Navigation */
@@ -95,6 +104,11 @@
     font-size: 15px;
 }
 
+.navigation__auth a:hover,
+.navigation__auth a:focus {
+    color: var(--colorTextGrayHover);
+}
+
 .navigation__auth a:nth-child(1) {
     border: none;
 }
@@ -131,11 +145,12 @@
 }
 
 @media (max-width: 698px) {
+
     .btn-menu,
     .btn-close {
         display: block;
     }
-
+    
     .navigation__container.active {
         position: fixed;
         bottom: 0px;
