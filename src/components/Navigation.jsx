@@ -52,16 +52,16 @@ class Navigation extends Component {
                                     <a href='#'>Features <img className='chevron' src='images/icon-arrow-down.svg' alt='chevron down icon' /></a>
                                     <ul className={`navigation__secondary_features ${this.state.openFeatures && 'active'}`}>
                                         <li>
-                                            <a href='#' tabIndex={this.state.openFeatures ? 1.1 : -1}><img src='images/icon-todo.svg' alt='To do list' />Todo List</a>
+                                            <a href='#' tabIndex={this.state.openFeatures ? 1.1 : -1}><img src='images/icon-todo.svg' alt='To do list' /><span>Todo List</span></a>
                                         </li>
                                         <li>
-                                            <a href='#' tabIndex={this.state.openFeatures ? 1.2 : -1}><img src='images/icon-calendar.svg' alt='Calendar' />Calendar</a>
+                                            <a href='#' tabIndex={this.state.openFeatures ? 1.2 : -1}><img src='images/icon-calendar.svg' alt='Calendar' /><span>Calendar</span></a>
                                         </li>
                                         <li>
-                                            <a href='#' tabIndex={this.state.openFeatures ? 1.3 : -1}><img src='images/icon-reminders.svg' alt='Reminders' />Reminders</a>
+                                            <a href='#' tabIndex={this.state.openFeatures ? 1.3 : -1}><img src='images/icon-reminders.svg' alt='Reminders' /><span>Reminders</span></a>
                                         </li>
                                         <li>
-                                            <a href='#' tabIndex={this.state.openFeatures ? 1.4 : -1}><img src='images/icon-planning.svg' alt='Planning' />Planning</a>
+                                            <a href='#' tabIndex={this.state.openFeatures ? 1.4 : -1}><img src='images/icon-planning.svg' alt='Planning' /><span>Planning</span></a>
                                         </li>
                                     </ul>
                                 </li>
@@ -73,9 +73,9 @@ class Navigation extends Component {
                                     }}>
                                     <a href='#'>Company <img className='chevron' src='images/icon-arrow-down.svg' alt='chevron down icon' /></a>
                                     <ul className={`navigation__secondary_company ${this.state.openCompany && 'active'}`}>
-                                        <li><a href='#' tabIndex={this.state.openCompany ? 2.1 : -1}>History</a></li>
-                                        <li><a href='#' tabIndex={this.state.openCompany ? 2.2 : -1}>Our Team</a></li>
-                                        <li><a href='#' tabIndex={this.state.openCompany ? 2.3 : -1}>Blog</a></li>
+                                        <li><a href='#' tabIndex={this.state.openCompany ? 2.1 : -1}><span>History</span></a></li>
+                                        <li><a href='#' tabIndex={this.state.openCompany ? 2.2 : -1}><span>Our Team</span></a></li>
+                                        <li><a href='#' tabIndex={this.state.openCompany ? 2.3 : -1}><span>Blog</span></a></li>
                                     </ul>
                                 </li>
                                 <li><a href='#' tabIndex='3'>Careers</a></li>

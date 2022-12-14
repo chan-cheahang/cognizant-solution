@@ -81,11 +81,17 @@
     display: block;
 }
 
+/* Explicitly set height due to vertical alignment issues with icon */
+.navigation__secondary_features li span {
+    height: 13px;
+}
+
 .navigation__secondary_features li a {
     display: grid;
     grid-template-columns: 16px 9fr;
     grid-gap: 16px;
     width: 118px;
+    align-items: center;
 }
 
 .navigation__secondary_features li img {
