@@ -43,12 +43,12 @@
     background-color: var(--colorTextWhite);
     right: 0;
     top: 36px;
-    border-radius: 5px;
+    border-radius: 16px;
     overflow: hidden;
     transition: all 0.15s ease-in-out;
     width: 0px;
     height: 0px;
-    box-shadow: 0 0 10px 0 var(--colorTextGray);
+    box-shadow: 0 4px 16px rgb(11 17 52 / 20%);
     padding: 20px 0;
 }
 
