@@ -10,8 +10,8 @@ function App() {
         <div className="banner__container">
           <div className="banner__content">
             <h1>Make remote work</h1>
-            <p>Get your team in sync, no matter your location. Streamline processes,
-              create team rituals, and watch productivity soar.</p>
+            <h2>Get your team in sync, no matter your location. Streamline processes,
+              create team rituals, and watch productivity soar.</h2>
 
             <a href="#" tabindex='7'>
               <button>Learn more</button>

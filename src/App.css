@@ -41,7 +41,7 @@ body {
   line-height: 1;
 }
 
-.banner__content p {
+.banner__content h2 {
   width: 418px;
   color: var(--colorTextGray);
   line-height: 1.5;
@@ -95,7 +95,7 @@ body {
     height: 428px;
   }
 
-  .banner__content p {
+  .banner__content h2 {
     width: 372px;
   }
 
@@ -129,7 +129,7 @@ body {
     margin-bottom: 0;
   }
 
-  .banner__content p {
+  .banner__content h2 {
     width: 100%;
     margin: 18px 0px 0px 0px;
     text-align: center;
