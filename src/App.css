@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --colorTextWhite: hsl(0, 0%, 98%);
+  --colorTextGray: hsl(0, 0%, 41%);
+  --colorTextBlack: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: Epilogue;
+  position: relative;
+  font-size: 18px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.banner__container {
+  display: flex;
+  height: 85vh;
+  margin: 0.5% 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__content h1 {
+  font-size: 70px;
+  width: 475px;
+  margin-top: 50px;
+  line-height: 1;
+}
+
+.banner__content p {
+  width: 418px;
+  color: var(--colorTextGray);
+  line-height: 1.5;
+  margin-top: 45px;
+}
+
+.banner__content button {
+  width: 148px;
+  height: 48px;
+  font-size: 18px;
+  margin-top: 42px;
+  padding: 8px 18px;
+  border-radius: 12px;
+  text-align: center;
+  color: var(--colorTextWhite);
+  background-color: var(--colorTextBlack);
+}
+
+.banner__content button:hover {
+  border: 2px solid var(--colorTextGray);
+  background-color: var(--colorTextWhite);
+  color: var(--colorTextBlack);
+}
+
+.banner__clients {
+  margin-top: 38px;
+}
+
+.banner__clients img {
+  margin-right: 24px;
+  vertical-align: middle;
+}
+
+.banner__image {
+  height: 512px;
+}
+
+.banner__image_mobile {
+  display: none;
+}
+
+@media (max-width: 998px) {
+  .banner__container {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 898px) {
+  .banner__image {
+    height: 428px;
+  }
+
+  .banner__content p {
+    width: 372px;
+  }
+
+  .banner__content {
+    margin: 12px auto;
+  }
+}
+
+@media (max-width: 698px) {
+  .banner__container {
+    margin: 0;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .banner__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .banner__content h1 {
+    font-size: 38px;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .banner__content p {
+    width: 100%;
+    margin: 18px 0px 0px 0px;
+    text-align: center;
+  }
+
+  .banner__content button {
+    margin-top: 20px;
+  }
+
+  .banner__clients {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .banner__clients img {
+    margin: 0;
+  }
+
+  .banner__image {
+    display: none;
+  }
+
+  .banner__image_mobile {
+    display: block;
+    width: 100%;
+  }
+}
