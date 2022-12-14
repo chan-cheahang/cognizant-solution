@@ -36,7 +36,7 @@
 }
 
 
-.navigation__container li:focus-within a,
+.navigation__container li:focus a,
 .navigation__container li a:hover,
 .navigation__container li a:focus {
     color: var(--colorTextGrayHover);
@@ -145,12 +145,11 @@
 }
 
 @media (max-width: 698px) {
-
     .btn-menu,
     .btn-close {
         display: block;
     }
-    
+
     .navigation__container.active {
         position: fixed;
         bottom: 0px;
