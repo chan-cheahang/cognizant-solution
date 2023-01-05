@@ -93,8 +93,8 @@ Check the generated `dist` folder. By default, Vite uses `index.html` as entry p
 The demo app access was deployed using the following cloud architectures, and can be accessed [here](https://cognizant.cheahang.dev/):
 - AWS CloudFront
 - AWS S3 Bucket
-- AWS Route 53
 - AWS Certificate Manager
+- CloudFlare DNS
 
 ## Dev Assumptions <a name = "assumptions"></a>
 - Zoom is fixed at 100%.
